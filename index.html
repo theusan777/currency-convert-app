@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,119 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style/index.css">
-  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="assets/index.css">
+
+  <title>Currency Convert</title>
 </head>
+
 <body>
-  
+
+  <header>
+    <img src="./img/logo.svg" alt="Currency Convert Logo">
+    <h1>Currency Convert</h1>
+  </header>
+
+  <main>
+
+    <form id="converter-form">
+
+      <div class="input-group">
+
+        <label for="amount">Valor</label>
+
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          placeholder="Digite o valor"
+          required>
+
+      </div>
+
+
+      <div class="input-group">
+
+        <label for="currency-from">De</label>
+
+        <div class="currency-select">
+
+          <img
+            id="from-flag"
+            src="./img/us.svg"
+            alt="Moeda origem">
+
+          <select id="currency-from" name="currency-from" required>
+
+            <option value="" disabled selected hidden>
+              Selecione
+            </option>
+
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+            <option value="BRL">Real (BRL)</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <div class="input-group">
+
+        <label for="currency-to">Para</label>
+
+        <div class="currency-select">
+
+          <img
+            id="to-flag"
+            src="./img/br.svg"
+            alt="Moeda destino">
+
+          <select id="currency-to" name="currency-to" required>
+
+            <option value="" disabled selected hidden>
+              Selecione
+            </option>
+
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+      <button type="submit">
+        Converter
+      </button>
+
+    </form>
+
+    <section class="result">
+
+      <span id="description">
+        Cotação aparecerá aqui
+      </span>
+
+      <h2 id="result">
+        --
+      </h2>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <small>Dados de câmbio atualizados online</small>
+  </footer>
 
   <script src="script.js"></script>
+
 </body>
+
 </html>
