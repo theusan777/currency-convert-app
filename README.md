@@ -1,31 +1,27 @@
 # Currency Convert
 
-A lightweight and responsive **currency converter** built with **HTML, CSS and Vanilla JavaScript**.
+A simple and responsive **currency converter** built with **HTML, CSS and Vanilla JavaScript**.
 
-The application allows users to convert values between currencies quickly through a clean and intuitive interface.
+This project allows users to convert currency values between different currencies using a clean and intuitive interface.
+
+## Live Demo
+
+https://theusan777.github.io/currency-convert-app/
 
 ## Preview
 
 ![Preview](./docs/preview.png)
 
-## Live Demo
-
-You can deploy this project using **GitHub Pages** to create a live version of the application.
-
-Example:
-
-https://yourusername.github.io/currency-convert
-
 ## Features
 
 Real time currency conversion
 Currency swap functionality
-Automatic recalculation
+Automatic result update
 Clean and modern interface
 Responsive layout
-Lightweight implementation using pure JavaScript
+Lightweight implementation with pure JavaScript
 
-## Technologies
+## Technologies Used
 
 HTML5
 CSS3
@@ -34,17 +30,15 @@ Vanilla JavaScript
 ## Project Structure
 
 ```
-currency-convert
+currency-convert-app
 │
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
-├── preview.png
 │
-└── img
-    ├── bg.png
-    └── logo.png
+└── assets
+    └── preview.png
 ```
 
 ## Installation
@@ -52,16 +46,16 @@ currency-convert
 Clone the repository
 
 ```
-git clone https://github.com/yourusername/currency-convert.git
+git clone https://github.com/theusan777/currency-convert-app.git
 ```
 
 Open the project folder
 
 ```
-cd currency-convert
+cd currency-convert-app
 ```
 
-Open `index.html` in your browser.
+Open the `index.html` file in your browser.
 
 No dependencies or build tools are required.
 
@@ -69,28 +63,20 @@ No dependencies or build tools are required.
 
 The background image must be placed inside the `img` folder.
 
-Step 1
-Create the folder structure:
+Example structure:
 
 ```
-project-folder
+currency-convert-app
 │
 ├── index.html
 ├── style.css
 ├── script.js
 │
 └── img
+    └── bg.png
 ```
 
-Step 2
-Add the image inside the folder with the exact name:
-
-```
-img/bg.png
-```
-
-Step 3
-The CSS references the image like this:
+CSS reference used in the project:
 
 ```
 body{
@@ -99,58 +85,43 @@ background-size: cover;
 }
 ```
 
-If the background does not appear, check:
+Make sure:
 
-* file name spelling
-* correct folder structure
-* browser cache
+* the folder name is `img`
+* the file name is `bg.png`
+* the folder is in the root of the project
 
 ## How to Use
 
-Enter a value in the amount field
-Select the source currency
-Select the target currency
-Click convert
+1. Enter a value in the **amount field**
+2. Select the **source currency**
+3. Select the **target currency**
+4. Click **Convert**
 
-The result will be displayed automatically.
+You can also use the **invert currencies** button to swap them instantly.
 
-You can also use the **invert currencies** button to swap the selected currencies instantly.
+The converted value will appear below the button.
 
-## JavaScript Logic
+## What I Learned
 
-The JavaScript layer handles the main application behavior:
+During the development of this project I practiced:
 
-Input value processing
-Currency selection handling
-Conversion calculation
-Dynamic interface updates
-Currency swap functionality
-Automatic result refresh
+* DOM manipulation
+* JavaScript event handling
+* Dynamic interface updates
+* Frontend project structure
+* Basic UI/UX design for web applications
 
-Event listeners capture user interaction and update the result without page reload.
+## Future Improvements
 
-## Deployment (GitHub Pages)
+Possible improvements for the project:
 
-1. Open the repository on GitHub
-2. Go to **Settings**
-3. Click **Pages**
-4. In **Branch**, select `main`
-5. Save
-
-Your project will be available at:
-
-```
-https://yourusername.github.io/repository-name
-```
-
-## Possible Improvements
-
-Integration with a real exchange rate API
-More currencies
-Input formatting
-Theme switcher (dark / light)
-Better mobile layout
+* Integration with a real exchange rate API
+* More supported currencies
+* Input formatting
+* Dark / light theme toggle
+* Improved mobile layout
 
 ## License
 
-MIT License
+This project is open source and available under the MIT License.
