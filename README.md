@@ -6,7 +6,7 @@ The application allows users to convert values between currencies quickly throug
 
 ## Preview
 
-![Preview](./readme.md/preview.png)
+![Preview](./docs/preview.png)
 
 ## Live Demo
 
