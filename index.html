@@ -1,127 +1,184 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="assets/index.css">
+<link rel="stylesheet" href="./assets/index.css">
 
-  <title>Currency Convert</title>
+<title>Currency Convert</title>
+
 </head>
 
 <body>
 
-  <header>
-    <img src="./img/logo.svg" alt="Currency Convert Logo">
-    <h1>Currency Convert</h1>
-  </header>
+<div class="background-image"></div>
 
-  <main>
+<header>
 
-    <form id="converter-form">
+<img src="./img/logo.png">
 
-      <div class="input-group">
+<h1>Currency Convert</h1>
 
-        <label for="amount">Valor</label>
+</header>
 
-        <input
-          type="number"
-          id="amount"
-          name="amount"
-          placeholder="Digite o valor"
-          required>
+<main>
 
-      </div>
+<form id="converter-form">
 
+<div class="input-group">
 
-      <div class="input-group">
+<label for="amount">
+Valor
+</label>
 
-        <label for="currency-from">De</label>
+<input
+type="text"
+id="amount"
+placeholder="Digite o valor"
+required>
 
-        <div class="currency-select">
+</div>
 
-          <img
-            id="from-flag"
-            src="./img/us.svg"
-            alt="Moeda origem">
+<div class="input-group">
 
-          <select id="currency-from" name="currency-from" required>
+<label for="currency-from">
+De
+</label>
 
-            <option value="" disabled selected hidden>
-              Selecione
-            </option>
+<div class="currency-select">
 
-            <option value="USD">Dólar (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">Libra (GBP)</option>
-            <option value="BRL">Real (BRL)</option>
+<img
+id="from-flag"
+src="./assets/flags/us.svg">
 
-          </select>
+<select id="currency-from">
 
-        </div>
+<option value="USD">
+Dólar (USD)
+</option>
 
-      </div>
+<option value="EUR">
+Euro (EUR)
+</option>
 
+<option value="GBP">
+Libra (GBP)
+</option>
 
-      <div class="input-group">
+<option value="BRL">
+Real (BRL)
+</option>
 
-        <label for="currency-to">Para</label>
+</select>
 
-        <div class="currency-select">
+</div>
 
-          <img
-            id="to-flag"
-            src="./img/br.svg"
-            alt="Moeda destino">
+</div>
 
-          <select id="currency-to" name="currency-to" required>
+<div class="input-group">
 
-            <option value="" disabled selected hidden>
-              Selecione
-            </option>
+<label for="currency-to">
+Para
+</label>
 
-            <option value="BRL">Real (BRL)</option>
-            <option value="USD">Dólar (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">Libra (GBP)</option>
+<div class="currency-select">
 
-          </select>
+<img
+id="to-flag"
+src="./assets/flags/br.svg">
 
-        </div>
+<select id="currency-to">
 
-      </div>
+<option value="BRL">
+Real (BRL)
+</option>
 
-      <button type="submit">
-        Converter
-      </button>
+<option value="USD">
+Dólar (USD)
+</option>
 
-    </form>
+<option value="EUR">
+Euro (EUR)
+</option>
 
-    <section class="result">
+<option value="GBP">
+Libra (GBP)
+</option>
 
-      <span id="description">
-        Cotação aparecerá aqui
-      </span>
+</select>
 
-      <h2 id="result">
-        --
-      </h2>
+</div>
 
-    </section>
+</div>
 
-  </main>
+<button
+type="button"
+id="swap">
 
-  <footer>
-    <small>Dados de câmbio atualizados online</small>
-  </footer>
+<svg
+id="swap-icon"
+xmlns="http://www.w3.org/2000/svg"
+width="20"
+height="20"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2">
 
-  <script src="script.js"></script>
+<path d="M7 7h11l-4-4"></path>
+
+<path d="M17 17H6l4 4"></path>
+
+</svg>
+
+Inverter moedas
+
+</button>
+
+<button
+type="button"
+id="convert">
+
+Converter
+
+</button>
+
+</form>
+
+<section class="result">
+
+<span id="description">
+
+Cotação aparecerá aqui
+
+</span>
+
+<h2 id="result">
+
+--
+
+</h2>
+
+</section>
+
+</main>
+
+<footer>
+
+<small>
+
+Conversor de moedas
+
+</small>
+
+</footer>
+
+<script src="./script.js"></script>
 
 </body>
 
